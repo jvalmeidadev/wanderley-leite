@@ -62,9 +62,14 @@ header {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+    border: 1px solid #000;
 
   animation: respirar 1.5s infinite;
   transition: background 0.3s;
+}
+
+.header-text a:hover {
+  animation: none; /* para a animação */
 }
 
 .header-text a svg {
@@ -272,9 +277,14 @@ section h2 {
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
+  border: 1px solid #000;
 
   animation: respirar 1.5s infinite;
   transition: background 0.3s;
+}
+
+.btn-whatsapp:hover {
+  animation: none; /* para a animação */
 }
 
 .header-text a svg {
@@ -295,13 +305,7 @@ section h2 {
   }
 }
 
-:root{
-  --accent: #b23a2c;    /* cor do destaque/vermelho */
-  --green: #25d366;     /* verde whatsapp */
-  --text: #222;
-  --muted: #666;
-  --card-radius: 14px;
-}
+
 
 /* container centralizador (use o max-width do seu site) */
 .atendimento-section {
@@ -424,43 +428,7 @@ section h2 {
 
 
 
-/* Sobre */
-.about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
 
-.about img {
-  max-width: 300px;
-  border-radius: 12px;
-}
-
-/* Contato */
-.contact {
-  text-align: center;
-  background: #004aad;
-  color: #fff;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-}
-
-.contact p {
-  margin: 1rem 0;
-}
-
-.btn {
-  display: inline-block;
-  background:#ffc107;
-  color:#000;
-  padding:0.8rem 1.5rem;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-/* Rodapé */
 footer {
   text-align: center;
   padding: 1rem;
@@ -479,4 +447,20 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+}
+
+.info {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza ícone, título e texto */
+  gap: 1rem; /* espaço entre ícone, título e texto */
+}
+
+.info p {
+  font-size: 18px;
 }
