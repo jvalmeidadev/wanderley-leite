@@ -428,32 +428,55 @@ section h2 {
 
 
 
-
-footer {
-  text-align: center;
-  padding: 1rem 1rem;
-  background: #222;
-  color: #ccc;
-  font-size: 0.9rem;
+.footer {
+  background: #000; /* Vermelho jurídico */
+  color: #fff;
+  padding: 1.2rem 1rem; /* antes 2rem */
+  font-size: 0.85rem;   /* antes 0.9rem */
 }
 
-footer .footer-contacts p {
-  margin: 0.3rem 0;
+.footer-contacts p {
+  margin: 0.25rem 0;   /* menos espaço entre linhas */
   display: flex;
   align-items: center;
-  justify-content: center; /* centraliza horizontalmente */
-  flex-wrap: wrap; /* para telas pequenas quebrar linha */
+  font-size: 0.85rem;  /* texto menor */
 }
 
-footer .footer-contacts i {
-  margin-right: 0.5rem;
+.footer-contacts i {
+  margin-right: 0.4rem;
+  font-size: 1rem;     /* ícone menor */
 }
 
-footer .footer-copy {
-  margin-top: 1rem;
+.footer-logo img {
+  max-height: 120px; /* antes 120px */
+  height: auto;
+  max-width: 100%;
+}
+
+.footer-logo h5 {
+  margin-top: 0.5rem;
+  font-size: 1rem;  /* menor título */
+}
+
+.footer-logo p {
+  margin: 0;
   font-size: 0.85rem;
-  color: #aaa;
 }
+
+.footer-divider {
+  border-top: 1px solid rgba(255,255,255,0.2);
+  margin: 1rem 0; /* menos espaço */
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.75rem; /* menor */
+  color: #ddd;
+  line-height: 1.3;
+}
+
+
+
 
 
 /* Responsividade */
