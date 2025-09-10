@@ -4,44 +4,63 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Superendividamento - Ajuda Jurídica</title>
+    <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
 <header>
-<div class="header-container">
+  <div class="header-container">
+    
+    <!-- Texto + logo -->
     <div class="header-text">
-    <img src="./images/ChatGPT Image 4 de set. de 2025, 17_50_49.png" alt="Logo">
-    <h1>Problemas com Dívidas? <span class="destaque">A Lei do Superendividamento </span>pode resolver</h1>
-    <p>Renegocie suas dívidas com termos justos que respeitem sua realidade financeira atual e até reduza o montante total da sua dívida com ajuda de um advogado
-      especialista na lei do superendividamento.</p>
-    <a href="https://wa.me/+557491371444" target="_blank">
-  Falar com Especialista
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" style="margin-left: 8px;">
-    <path d="M13.601 2.326a7.493 7.493 0 0 0-10.6 0 7.48 7.48 0 0 0-2.193 5.296c0 1.3.342 2.567.993 3.688L.5 16l4.732-1.302a7.488 7.488 0 0 0 3.68.994 7.48 7.48 0 0 0 5.297-2.193 7.494 7.494 0 0 0 0-10.6zm-5.297 10.514a6.16 6.16 0 0 1-3.32-.895l-.24-.143-2.802.772.748-2.728-.157-.26a6.155 6.155 0 1 1 5.77 3.254z"/>
-    <path d="M11.13 9.557c-.156-.078-.924-.457-1.066-.51-.143-.052-.247-.078-.351.078s-.403.51-.494.615c-.09.104-.178.117-.33.039-.152-.078-.64-.235-1.218-.747-.45-.401-.754-.896-.844-1.05-.09-.156-.01-.24.07-.318.072-.071.156-.178.234-.267.078-.09.104-.156.156-.26.052-.104.026-.195-.013-.273-.039-.078-.351-.844-.48-1.156-.126-.304-.255-.263-.351-.267-.091-.004-.195-.005-.298-.005s-.273.039-.416.178c-.143.139-.546.533-.546 1.3s.559 1.507.636 1.612c.078.104 1.099 1.678 2.66 2.352.372.16.66.255.886.326.372.116.71.099.977.06.298-.043.924-.377 1.054-.743.13-.366.13-.681.091-.743-.039-.061-.143-.104-.299-.182z"/>
-  </svg>
-</a>
-<ul class="lista-atendimento">
-    <li>
-      <!-- Ícone Atendimento Online (use a SUA imagem) -->
-      <!-- Coloque a imagem no mesmo diretório do HTML ou ajuste o caminho abaixo -->
-      <img class="icon" src="./images/OIP.jfif" alt="Atendimento Online">
-      Atendimento Online
-    </li>
-    <li>
-      <!-- Ícone de mapa para “Atendimento em todo Brasil” (Bootstrap Icons) -->
-      <img class="icon" src="./images/brazil-map-svgrepo-com.svg" alt="Atendimeto em todo o brasil">
-      Atendimento em todo Brasil
-    </li>
-  </ul>
+      <img src="./images/ChatGPT Image 4 de set. de 2025, 17_50_49.png" alt="Logo da empresa" class="logo">
+
+      <h1>
+        Problemas com Dívidas? 
+        <span class="destaque">A Lei do Superendividamento</span> pode resolver
+      </h1>
+
+      <p>
+        Renegocie suas dívidas com termos justos que respeitem sua realidade financeira atual
+        e até reduza o montante total da sua dívida com ajuda de um advogado especialista.
+      </p>
+
+      <a href="https://wa.me/+557491371444" target="_blank">
+        Falar com Especialista
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+          fill="currentColor" viewBox="0 0 16 16">
+          <path
+            d="M13.601 2.326a7.493 7.493 0 0 0-10.6 0 7.48 7.48 0 0 0-2.193 5.296c0 1.3.342 2.567.993 3.688L.5 16l4.732-1.302a7.488 7.488 0 0 0 3.68.994 7.48 7.48 0 0 0 5.297-2.193 7.494 7.494 0 0 0 0-10.6zm-5.297 10.514a6.16 6.16 0 0 1-3.32-.895l-.24-.143-2.802.772.748-2.728-.157-.26a6.155 6.155 0 1 1 5.77 3.254z"/>
+          <path
+            d="M11.13 9.557c-.156-.078-.924-.457-1.066-.51-.143-.052-.247-.078-.351.078s-.403.51-.494.615c-.09.104-.178.117-.33.039-.152-.078-.64-.235-1.218-.747-.45-.401-.754-.896-.844-1.05-.09-.156-.01-.24.07-.318.072-.071.156-.178.234-.267.078-.09.104-.156.156-.26.052-.104.026-.195-.013-.273-.039-.078-.351-.844-.48-1.156-.126-.304-.255-.263-.351-.267-.091-.004-.195-.005-.298-.005s-.273.039-.416.178c-.143.139-.546.533-.546 1.3s.559 1.507.636 1.612c.078.104 1.099 1.678 2.66 2.352.372.16.66.255.886.326.372.116.71.099.977.06.298-.043.924-.377 1.054-.743.13-.366.13-.681.091-.743-.039-.061-.143-.104-.299-.182z"/>
+        </svg>
+      </a>
+
+      <ul class="lista-atendimento">
+        <li>
+          <img class="icon" src="./images/OIP.jfif" alt="Atendimento Online">
+          Atendimento Online
+        </li>
+        <li>
+          <img class="icon" src="./images/brazil-map-svgrepo-com.svg" alt="Atendimento em todo Brasil">
+          Atendimento em todo Brasil
+        </li>
+      </ul>
+    </div>
+
+    <!-- Imagem lateral -->
+    <div class="header-img">
+      <img src="./images/neteratotal2.jpeg" alt="Ilustração sobre dívidas">
+    </div>
+
   </div>
-  <div class="header-img">
-    <img src="./images/neteratotal2.jpeg" alt="Ilustração sobre dívidas">
-  </div>
-</div>
 </header>
+
 
   <section class="bem">
     <h2>Benefícios da <span class="destaque">nossa assessoria</span></h2>
@@ -169,20 +188,8 @@
   </div>
 </section>
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rodapé Advogados</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
+
   
   <!-- Rodapé -->
   <footer class="footer">
@@ -215,7 +222,7 @@
     </div>
   </footer>
 
-</body>
+
 </html>
 
 
