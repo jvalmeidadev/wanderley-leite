@@ -193,7 +193,7 @@ header {
   .lista-atendimento {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 0;
     margin: 2rem 0 0 0;
     width: 100%;
