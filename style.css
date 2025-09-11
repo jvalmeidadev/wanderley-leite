@@ -22,18 +22,24 @@ body {
 /* Header em duas colunas */
 header {
   display: flex;
-  padding: 5rem 0;
-  padding-left: 20px;
+  padding: 3rem 1rem;
   color: #000;
   background-color: #fff;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  min-height: 100vh;
+  align-items: center;
 }
 
 .header-container {
   display: flex;
   align-items: center;
   gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* Texto do header */
@@ -48,32 +54,37 @@ header {
 }
 
 .destaque {
-  color: #f73d2f; /* PARTE DO TEXTO PARAGRAFO */
+  color: #f73d2f;
+  font-weight: bold; /* PARTE DO TEXTO PARAGRAFO */
 }
 
 .header-text p {
   margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
 .header-text a {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
-  padding: 0.8rem 1.5rem;
-  background: #49ff07;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  background: #a2fc82;
   color: #000;
   text-decoration: none;
   border-radius: 8px;
   font-weight: bold;
-    border: 1px solid #000;
-
+  border: 1px solid #000;
+  font-size: 1.1rem;
   animation: respirar 1.5s infinite;
   transition: background 0.3s;
 }
 
 .header-text a:hover {
   animation: none; /* para a animação */
+  background: #3fe006;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(73, 255, 7, 0.4);
 }
 
 .header-text a svg {
@@ -85,12 +96,12 @@ header {
   0%, 100% {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 10px #49ff07;
+    box-shadow: 0 0 10px #a2fc82;
   }
   50% {
     opacity: 0.6;
     transform: scale(1.05);
-    box-shadow: 0 0 20px #49ff07;
+    box-shadow: 0 0 20px #a2fc82;
   }
 }
 
@@ -114,15 +125,15 @@ header {
       padding: 0;
       margin: 0;
     }
+
     .lista-atendimento li{
       display: flex;
       align-items: center;
-      gap: .5rem;            /* espaço entre ícone e texto */
-      margin: .35rem 0;
+      gap: 0.8rem;            /* espaço entre ícone e texto */
+      margin: 1rem 0;
       font: 500 16px/1.2 system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
       color: #4a4a4a;
-      font-size: 22px;
-      white-space: nowrap;
+      font-size: 1.3rem;
     }
     .lista-atendimento .icon{
       width: 22px;
@@ -169,7 +180,6 @@ header {
 
   .header-text {
     max-width: 100%;
-    align-items: center;
   }
 
   .header-text .logo {
@@ -181,14 +191,30 @@ header {
 
   /* links em coluna */
   .lista-atendimento {
+    display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0;
+    margin: 2rem 0 0 0;
     width: 100%;
   }
 
   .lista-atendimento li {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     width: 100%;
+    max-width: 300px;
+    font-size: 16px;
+  }
+  .lista-atendimento .icon {
+    margin-bottom: 0;
+    margin-right: 0.8rem;
+    flex-shrink: 0;
   }
 
   /* imagem por último */
@@ -202,11 +228,6 @@ header {
     max-width: 90%;
     height: auto;
   }
-
-
-
-
-
 
 /* TERMINA O HEADER */
 
@@ -305,7 +326,6 @@ section h2 {
   display: grid;
   grid-template-columns: 1fr 1fr; /* duas colunas */
   gap: 2rem;
-  align-items: center;
   padding: 2rem;
 }
 
@@ -348,7 +368,7 @@ section h2 {
   justify-content: center;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: #49ff07;
+  background: #a2fc82;
   color: #000;
   text-decoration: none;
   border-radius: 8px;
@@ -372,12 +392,12 @@ section h2 {
   0%, 100% {
     opacity: 1;
     transform: scale(1);
-    box-shadow: 0 0 10px #49ff07;
+    box-shadow: 0 0 10px #a2fc82;
   }
   50% {
     opacity: 0.6;
     transform: scale(1.05);
-    box-shadow: 0 0 20px #49ff07;
+    box-shadow: 0 0 20px #a2fc82;
   }
 }
 
@@ -498,7 +518,7 @@ section h2 {
   justify-content: center;
   margin-top: 1rem;
   padding: 0.8rem 1.5rem;
-  background: #49ff07;
+  background: #a2fc82;
   color: #000;
   text-decoration: none;
   border-radius: 8px;
